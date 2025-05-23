@@ -70,104 +70,7 @@
         };
     };
 
-    combos {
-        compatible = "zmk,combos";
-
-        escape {
-            bindings = <&kp ESCAPE>;
-            key-positions = <13 29>;
-        };
-
-        delete {
-            bindings = <&kp DELETE>;
-            key-positions = <15 21>;
-        };
-
-        perc {
-            bindings = <&kp PERCENT>;
-            key-positions = <5 17>;
-        };
-
-        equal {
-            bindings = <&kp EQUAL>;
-            key-positions = <28 16>;
-        };
-
-        dollar {
-            bindings = <&kp DOLLAR>;
-            key-positions = <4 16>;
-        };
-
-        pound {
-            bindings = <&kp POUND>;
-            key-positions = <3 15>;
-        };
-
-        at {
-            bindings = <&kp AT>;
-            key-positions = <2 14>;
-        };
-
-        backslash {
-            bindings = <&kp BACKSLASH>;
-            key-positions = <26 14>;
-        };
-
-        copy {
-            bindings = <&kp K_COPY>;
-            key-positions = <28 27>;
-        };
-
-        paste {
-            bindings = <&kp K_PASTE>;
-            key-positions = <26 27>;
-        };
-
-        star {
-            bindings = <&kp STAR>;
-            key-positions = <8 20>;
-        };
-
-        slash {
-            bindings = <&kp SLASH>;
-            key-positions = <32 20>;
-        };
-
-        plus {
-            bindings = <&kp PLUS>;
-            key-positions = <7 19>;
-        };
-
-        minus {
-            bindings = <&kp KP_MINUS>;
-            key-positions = <31 19>;
-        };
-
-        underscore {
-            bindings = <&kp UNDER>;
-            key-positions = <30 18>;
-        };
-
-        leftbrack {
-            bindings = <&kp LEFT_BRACKET>;
-            key-positions = <31 32>;
-        };
-
-        rightbrack {
-            bindings = <&kp RIGHT_BRACKET>;
-            key-positions = <33 32>;
-        };
-
-        para-less {
-            bindings = <&paraless>;
-            key-positions = <20 19>;
-        };
-
-        para-great {
-            bindings = <&paragreat>;
-            key-positions = <20 21>;
-        };
-    };
+    combos { compatible = "zmk,combos"; };
 
     //
 
@@ -184,10 +87,10 @@
             // | GUI | CTRL | SHFT | LWR | SPC |   | ENT | RSE  | BKSP | ALT | ESC |
 
             bindings = <
-&kp TAB        &kp Q               &kp W           &kp E               &kp R             &kp T        &kp Y      &kp U              &kp I                &kp O            &kp P                        &kp BACKSPACE
-&kp ESC        &hm LEFT_CONTROL A  &hm LEFT_ALT S  &hm LEFT_COMMAND D  &hm LEFT_SHIFT F  &kp G        &kp H      &hm RIGHT_SHIFT J  &hm RIGHT_COMMAND K  &hm RIGHT_ALT L  &hm RIGHT_CONTROL SEMICOLON  &kp SQT
-&kp LA(SPACE)  &kp Z               &kp X           &kp C               &kp V             &kp B        &kp N      &kp M              &kp COMMA            &kp DOT          &kp FSLH                     &kp LG(SPACE)
-                                                   &mo 1               &lt 2 SPACE       &lt 3 RET    &lt 3 RET  &lt 2 SPACE        &mo 1
+&kp TAB         &kp Q               &kp W           &kp E               &kp R        &kp T        &kp Y      &kp U        &kp I                    &kp O                 &kp P                    &kp BACKSPACE
+&kp ESC         &kp A               &kp S           &kp D               &kp F        &kp G        &kp H      &kp J        &kp K                    &kp L                 &kp SEMI                 &kp SQT
+&kp LEFT_SHIFT  &hm LEFT_CONTROL Z  &hm LEFT_ALT X  &hm LEFT_COMMAND C  &kp V        &kp B        &kp N      &kp M        &hm RIGHT_COMMAND COMMA  &hm RIGHT_ALT PERIOD  &hm RIGHT_CONTROL SLASH  &kp RIGHT_SHIFT
+                                                    &mo 1               &lt 2 SPACE  &lt 3 RET    &lt 3 RET  &lt 2 SPACE  &mo 1
             >;
         };
 
