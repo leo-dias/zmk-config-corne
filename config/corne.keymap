@@ -128,13 +128,13 @@
             >;
         };
 
-        Numbers {
-            display-name = "Numbers";
+        Combos {
+            display-name = "Combos";
             bindings = <
-&trans  &kp NUMBER_1  &kp NUMBER_2          &kp NUMBER_3          &kp NUMBER_4    &kp N5    &kp NUMBER_6  &kp N7  &kp N8  &kp N9  &kp N0  &trans
-&trans  &trans        &kp LS(LG(NUMBER_3))  &kp LS(LG(NUMBER_4))  &kp LS(LG(N5))  &trans    &trans        &trans  &trans  &trans  &trans  &trans
-&trans  &trans        &trans                &trans                &trans          &trans    &trans        &trans  &trans  &trans  &trans  &trans
-                                            &trans                &trans          &trans    &trans        &trans  &trans
+&none  &kp LC(LG(Q))  &none          &kp LS(LG(NUMBER_3))  &kp LS(LG(NUMBER_4))  &kp LS(LG(N5))    &none   &none   &none   &none  &none  &none
+&none  &none          &kp LG(LC(S))  &none                 &none                 &none             &none   &none   &none   &none  &none  &none
+&none  &none          &none          &none                 &none                 &none             &none   &none   &none   &none  &none  &none
+                                     &trans                &trans                &trans            &trans  &trans  &trans
             >;
         };
 
