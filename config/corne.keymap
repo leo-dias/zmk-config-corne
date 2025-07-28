@@ -105,10 +105,10 @@
             // | GUI | CTRL | SHFT | LWR | SPC |   | ENT | RSE  | BKSP | ALT | ESC |
 
             bindings = <
-&kp F1      &kp F2        &kp F3        &kp F4        &kp F5              &kp F6                  &kp F7          &kp F8          &kp F9        &kp F10          &kp F11   &kp F12
-&caps_word  &trans        &trans        &trans        &trans              &trans                  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp HOME  &kp PAGE_UP
-&trans      &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &trans              &trans                  &trans          &trans          &trans        &trans           &kp END   &kp PAGE_DOWN
-                                        &trans        &kp LS(LEFT_SHIFT)  &kp LC(LEFT_CONTROL)    &trans          &trans          &trans
+&kp F1      &kp F2            &kp F3        &kp F4            &kp F5              &kp F6                  &kp F7          &kp F8          &kp F9             &kp F10          &kp F11            &kp F12
+&caps_word  &bt BT_SEL 0      &bt BT_SEL 1  &bt BT_SEL 2      &bt BT_SEL 3        &bt BT_SEL 4            &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW       &kp RIGHT_ARROW  &none              &none
+&none       &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_COMMAND  &kp HOME            &kp END                 &kp PG_UP       &kp PAGE_DOWN   &kp RIGHT_COMMAND  &kp RIGHT_ALT    &kp RIGHT_CONTROL  &none
+                                            &trans            &kp LS(LEFT_SHIFT)  &kp LC(LEFT_CONTROL)    &trans          &trans          &trans
             >;
         };
 
@@ -122,10 +122,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp GRAVE      &kp EXCLAMATION  &kp AT_SIGN  &kp HASH           &kp DOLLAR       &kp PERCENT    &kp CARET  &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
-&trans         &trans           &trans       &trans             &trans           &trans         &kp MINUS  &kp EQUAL      &kp LBKT      &kp RBKT              &kp BSLH               &kp PIPE
-&kp C_BRI_DEC  &kp C_BRI_INC    &kp K_MUTE   &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &trans         &kp UNDER  &kp PLUS       &kp LBRC      &kp RBRC              &trans                 &trans
-                                             &trans             &trans           &trans         &trans     &trans         &trans
+&kp GRAVE      &kp EXCLAMATION   &kp AT_SIGN   &kp HASH           &kp DOLLAR       &kp PERCENT    &kp CARET  &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
+&kp C_BRI_DEC  &kp C_BRI_UP      &kp K_MUTE    &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &trans         &kp MINUS  &kp EQUAL      &kp LBKT      &kp RBKT              &kp BSLH               &kp PIPE
+&none          &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_COMMAND   &trans           &trans         &kp UNDER  &kp PLUS       &kp LBRC      &kp RBRC              &trans                 &trans
+                                               &trans             &trans           &trans         &trans     &trans         &trans
             >;
         };
 
@@ -142,10 +142,10 @@
         NumPad {
             display-name = "NumPad";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &none      &kp N7  &kp N8     &kp N9  &none       &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &kp PLUS   &kp N4  &kp N5     &kp N6  &none       &kp ASTERISK
-&trans  &trans  &trans  &trans  &trans  &trans    &kp MINUS  &kp N1  &kp N2     &kp N3  &kp PERIOD  &kp SLASH
-                        &trans  &trans  &trans    &kp RET    &kp N0  &kp EQUAL
+&trans  &trans            &trans        &trans            &trans  &trans    &none      &kp N7  &kp N8     &kp N9  &none       &trans
+&trans  &trans            &trans        &trans            &trans  &trans    &kp PLUS   &kp N4  &kp N5     &kp N6  &none       &kp ASTERISK
+&trans  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_COMMAND  &trans  &trans    &kp MINUS  &kp N1  &kp N2     &kp N3  &kp PERIOD  &kp SLASH
+                                        &trans            &trans  &trans    &kp RET    &kp N0  &kp EQUAL
             >;
         };
     };
