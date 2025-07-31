@@ -123,8 +123,8 @@
 
             bindings = <
 &kp GRAVE      &kp EXCLAMATION   &kp AT_SIGN   &kp HASH           &kp DOLLAR       &kp PERCENT    &kp CARET  &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
-&kp C_BRI_DEC  &kp C_BRI_UP      &kp K_MUTE    &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &trans         &kp MINUS  &kp EQUAL      &kp LBKT      &kp RBKT              &kp BSLH               &kp PIPE
-&none          &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_COMMAND   &trans           &trans         &kp UNDER  &kp PLUS       &kp LBRC      &kp RBRC              &trans                 &trans
+&kp C_BRI_DEC  &kp C_BRI_UP      &kp K_MUTE    &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp TILDE      &kp MINUS  &kp PLUS       &kp LBKT      &kp RBKT              &kp BSLH               &kp PIPE
+&none          &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_COMMAND   &trans           &trans         &kp UNDER  &kp EQUAL      &kp LBRC      &kp RBRC              &trans                 &trans
                                                &trans             &trans           &trans         &trans     &trans         &trans
             >;
         };
